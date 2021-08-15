@@ -1,7 +1,9 @@
-:blogpost: true
-:category: Writing
-:date: August 14, 2021
-:location: Earth
+---
+blogpost: true
+category: Writing
+date: August 14, 2021
+location: Earth
+---
 
 # I Think I have it!
 

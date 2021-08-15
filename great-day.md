@@ -1,10 +1,10 @@
 ---
 blogpost: true
-category: Dog
+category: Nick
 date: August 10, 2021
 location: Milwaukee
-
 ---
+
 # Great Day #
 
 Today is a great day for Nick and me.
