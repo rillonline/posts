@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setting up Ablog &#8212; Blog Posts  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" /> 
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+ 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../blog/atom.xml"
+  title="Blog Posts"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+             <div class="section" id="setting-up-ablog">
+<h1>Setting up Ablog<a class="headerlink" href="#setting-up-ablog" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>This has been difficult for me. I went down a number of alleys which
+did not lead to joy. In the end, I decided on a very generic
+presentation so that <code class="docutils literal notranslate"><span class="pre">ablog</span></code> works.</p>
+<p>I decided on the generic approach for two reasons:</p>
+<ol class="simple">
+<li><p>got it working. I didn’t want anything to break which led me
+initially to despair and to work late.</p></li>
+<li><p>My blog posts are more or less temporary. They may stay in the
+blog repository, but I will be moving most of them to another
+repository where they will be stored in writing collections.
+This means they don’t have to stay searchable and I don’t expect
+my readers to have to search through pages of archives to find
+them. The most likely person to search is me.</p></li>
+</ol>
+</div>
+<div class="section" id="lets-get-started">
+<h2>Let’s Get Started<a class="headerlink" href="#lets-get-started" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://ablog.readthedocs.io">ablog</a> is written in <code class="docutils literal notranslate"><span class="pre">python</span></code> so you will need to have <code class="docutils literal notranslate"><span class="pre">pip</span></code>
+installed. I am using a <code class="docutils literal notranslate"><span class="pre">Debian</span></code> installation so I had to install it
+manually. I already had <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a> installed. This means I
+already had <code class="docutils literal notranslate"><span class="pre">Sphinx</span></code> and the <code class="docutils literal notranslate"><span class="pre">myst-parser</span></code> installed. With <a class="reference external" href="https://jupyterbook.org/intro.html">jb</a>
+installed, I was running <code class="docutils literal notranslate"><span class="pre">Spinx</span> <span class="pre">3.5.4</span></code> running, but was able
+subsequently to update both <code class="docutils literal notranslate"><span class="pre">Spinx</span></code> and <code class="docutils literal notranslate"><span class="pre">myst-parser</span></code> to later
+versions. I think this helped me but I can’t say for sure. Your
+mileage may vary.</p>
+<p>My install command is simple:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sudo pip3 install ablog
+</pre></div>
+</div>
+</div>
+<div class="section" id="starting-ablog">
+<h2>Starting Ablog<a class="headerlink" href="#starting-ablog" title="Permalink to this headline">¶</a></h2>
+<p>I created a new repository on <a class="reference external" href="https://github.com">github</a> which I cloned so
+basically I had a blank repository. Then I was able to set up the
+initial framework for <a class="reference external" href="https://ablog.readthedocs.io">ablog</a>. This is important because
+<a class="reference external" href="https://ablog.readthedocs.io">ablog</a> cannot be installed in a directory with an existing
+conf.<code class="docutils literal notranslate"><span class="pre">py</span></code> file.</p>
+<p>ablog start</p>
+<p>You will be prompted for several bits of information including where
+to install <a class="reference external" href="https://ablog.readthedocs.io">ablog</a>. The directory must exist. The other pieces
+of information will be written into your conf.<code class="docutils literal notranslate"><span class="pre">py</span></code> file.</p>
+</div>
+<div class="section" id="restructured-text-or-markdown">
+<h2>Restructured Text or Markdown?<a class="headerlink" href="#restructured-text-or-markdown" title="Permalink to this headline">¶</a></h2>
+<p>The first decision  you need to make is whether you want to write your
+posts in Restructured Text (rst) (the language of Sphinx) or use Markedly
+Structured Text (<a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html">myst</a>). Myst uses <code class="docutils literal notranslate"><span class="pre">.md</span></code> for files while Restructured
+Text uses <code class="docutils literal notranslate"><span class="pre">.rst</span></code>. You will notice that <a class="reference external" href="https://ablog.readthedocs.io">ablog</a> uses <code class="docutils literal notranslate"><span class="pre">.rst</span></code>.
+Fortunately, once you have Myst set up, you can use both.</p>
+<p>If you already know markdown, you can get along fine with Myst. I
+became familiar with Myst through <a class="reference external" href="https://jupyterbook.org/intro.html">jb</a> and its a handy reference
+with its [Myst <a class="reference external" href="https://jupyterbook.org/reference/cheatsheet.html">cheat sheet</a>.</p>
+</div>
+<div class="section" id="get-myst-working">
+<h2>Get Myst Working<a class="headerlink" href="#get-myst-working" title="Permalink to this headline">¶</a></h2>
+<p>You need to add myst_<code class="docutils literal notranslate"><span class="pre">parser</span></code> to the <code class="docutils literal notranslate"><span class="pre">extensions</span></code> variable in
+<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>. Remember, this is <code class="docutils literal notranslate"><span class="pre">python</span></code> so follow the format of the
+other extensions.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>extensions = [
+    ...
+    &quot;myst_parser&quot;,
+    ...
+]
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Be sure to notice the square brackets <code class="docutils literal notranslate"><span class="pre">[]</span></code>.</p>
+</div>
+<p>You also need to add this statement. I put
+mine at the end of the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>myst_update_mathjax = False
+</pre></div>
+</div>
+<p>I also put this to enable additional features of <code class="docutils literal notranslate"><span class="pre">myst</span></code>.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>myst_enable_extensions = [
+    &quot;amsmath&quot;,
+    &quot;colon_fence&quot;,
+    &quot;deflist&quot;,
+    &quot;dollarmath&quot;,
+    &quot;html_admonition&quot;,
+    &quot;html_image&quot;,
+    &quot;linkify&quot;,
+    &quot;replacements&quot;,
+    &quot;smartquotes&quot;,
+    &quot;substitution&quot;,
+    &quot;tasklist&quot;,
+]
+</pre></div>
+</div>
+<p>My previous tip about square brackets <code class="docutils literal notranslate"><span class="pre">[]</span></code> applies here, too.</p>
+</div>
+<div class="section" id="front-matter">
+<h2>Front Matter<a class="headerlink" href="#front-matter" title="Permalink to this headline">¶</a></h2>
+<p>Finally, each post needs front matter. I am using the <code class="docutils literal notranslate"><span class="pre">yml</span></code> format.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>---
+blogpost: true
+date: August 15, 2021
+category: Tech
+---
+
+Note particularly the three hyphens `-` on a separate line to
+start and end the front matter. There are several other possible
+pieces of information, but these are the most critical.
+</pre></div>
+</div>
+</div>
+<div class="section" id="the-index-rst-file">
+<h2>The `index.rst file<a class="headerlink" href="#the-index-rst-file" title="Permalink to this headline">¶</a></h2>
+<p>I almost left the <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> file alone. In my various iterations of
+dealing with <a class="reference external" href="https://ablog.readthedocs.io">ablog</a> this gave me the most trouble. That’s why
+my blog page looks so generic and boring. It just works.</p>
+<ul class="simple">
+<li><p>I took out the references to <em>about me</em> because I reference that info
+elsewhere.</p></li>
+<li><p>I also deleted the file in the directory and the <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> file.</p></li>
+</ul>
+</div>
+<div class="section" id="building-the-blog">
+<h2>Building the Blog<a class="headerlink" href="#building-the-blog" title="Permalink to this headline">¶</a></h2>
+<p>To build the blog you simply type:</p>
+<p>ablog build</p>
+<p>You will get a warning about <code class="docutils literal notranslate"><span class="pre">mathjax</span></code>. Review other warnings as
+needed. Your new web site is in the <code class="docutils literal notranslate"><span class="pre">_website</span></code> directory.</p>
+</div>
+<div class="section" id="cleaning">
+<h2>Cleaning<a class="headerlink" href="#cleaning" title="Permalink to this headline">¶</a></h2>
+<p>I find it useful to delete the <code class="docutils literal notranslate"><span class="pre">_website</span></code> directory before a build.
+<a class="reference external" href="https://ablog.readthedocs.io">ablog</a> has a command for this:</p>
+<p>ablog clea</p>
+<p>n</p>
+</div>
+<div class="section" id="getting-odnnline">
+<h2>Getting ODnNline<a class="headerlink" href="#getting-odnnline" title="Permalink to this headline">¶</a></h2>
+<p>I use <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> to get my pages published. It’s another <code class="docutils literal notranslate"><span class="pre">python</span></code>
+program I learned about from <a class="reference external" href="https://jupyterbook.org/intro.html">jb</a>. <a class="reference external" href="https://ablog.readthedocs.io">ablog</a> has its own
+<code class="docutils literal notranslate"><span class="pre">deploy</span></code> function but I haven’t checked that out yet. <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>
+only handles <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> so I have to commit my own source files to
+<a class="reference external" href="https://github.com">github</a> which is just fine with me for right now.</p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>I was using <a class="reference external" href="https://getnikola.com/">nikola</a> to publish my blog. It’s fine, but it’s
+heavier to use. There’s a lot of flexibility and the option of
+building pages, too. I just want a simple blog program and so far,
+<a class="reference external" href="https://ablog.readthedocs.io">ablog</a> satisfies this requirement. I need to learn more about
+the <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">toctree</span></code> directive in Sphinx to clean up my landing page and
+add some more interesting elements to it.</p>
+</div>
+</div>
+
+<div class="section">
+     
+<div class="section">
+  <span style="float: left">
+     Previous:
+    
+    <a href="../insecurity/">
+       Insecurity
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+    
+  </span>
+</div>
+  
+</div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../">Blog Posts</a></h1>
+
+
+
+
+
+
+
+
+  
+<h2>
+   
+  15 August 2021 
+</h2>
+
+<ul>
+    
+<li id="location">
+  <span
+    >Location:</span
+  >
+   
+  <a href="../blog/location/the-blue-planet/">The Blue Planet</a>  
+</li>
+  
+<li id="category">
+  <span
+    >Category:</span
+  >
+   
+  <a href="../blog/category/tech/">Tech</a>  
+</li>
+  
+</ul>
+<h3>Navigation</h3>
+
+
+<h3>
+  <a href="../blog/">Recent Posts</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../insecurity/"
+      >15 August - Insecurity</a
+    >
+  </li>
+  
+  <li>
+    <a href="../I-think-I-have-it/"
+      >14 August - I Think I have it!</a
+    >
+  </li>
+  
+  <li>
+    <a href="../great-day/"
+      >10 August - Great Day</a
+    >
+  </li>
+  
+  <li>
+    <a href="../my-blog/"
+      >02 August - My Blog</a
+    >
+  </li>
+  
+  <li>
+    <a href="../my-writing-is-in-disarray/"
+      >01 August - My Writing is in Disarray</a
+    >
+  </li>
+  
+</ul>
+
+<h3>
+  <a href="../blog/category/">Categories</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../blog/category/nick/">Nick (1)</a>
+  </li>
+    
+  <li>
+    <a href="../blog/category/personal-pieces/">Personal Pieces (1)</a>
+  </li>
+    
+  <li>
+    <a href="../blog/category/tech/">Tech (1)</a>
+  </li>
+    
+  <li>
+    <a href="../blog/category/writing/">Writing (3)</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="../blog/archive/">Archives</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../blog/2021/">2021 (6)</a>
+  </li>
+   
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Rill.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/setting-up-ablog.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://rillonline.github.io/posts</id>
   <title>Blog Posts</title>
-  <updated>2021-08-15T16:40:59.256815+00:00</updated>
+  <updated>2021-08-15T21:23:56.647688+00:00</updated>
   <link href="https://rillonline.github.io/posts"/>
   <link href="https://rillonline.github.io/posts/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.19">ABlog</generator>
@@ -70,6 +70,20 @@ content. I’m either looking ahead or looking back.&lt;/p&gt;
     <link href="https://rillonline.github.io/posts/insecurity/" rel="alternate"/>
     <summary>I don’t think I’ve ever been a relaxed person, living in the moment,
 content. I’m either looking ahead or looking back.</summary>
+    <published>2021-08-15T00:00:00-05:00</published>
+  </entry>
+  <entry>
+    <id>https://rillonline.github.io/posts/setting-up-ablog/</id>
+    <title>Setting up Ablog</title>
+    <updated>2021-08-15T00:00:00-05:00</updated>
+    <content type="html">&lt;p&gt;This has been difficult for me. I went down a number of alleys which
+did not lead to joy. In the end, I decided on a very generic
+presentation so that &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;ablog&lt;/span&gt;&lt;/code&gt; works.&lt;/p&gt;
+</content>
+    <link href="https://rillonline.github.io/posts/setting-up-ablog/" rel="alternate"/>
+    <summary>This has been difficult for me. I went down a number of alleys which
+did not lead to joy. In the end, I decided on a very generic
+presentation so that ablog works.</summary>
     <published>2021-08-15T00:00:00-05:00</published>
   </entry>
 </feed>
