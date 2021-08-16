@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://rillonline.github.io/posts</id>
   <title>Blog Posts</title>
-  <updated>2021-08-15T21:23:56.647688+00:00</updated>
+  <updated>2021-08-16T01:35:31.700847+00:00</updated>
   <link href="https://rillonline.github.io/posts"/>
   <link href="https://rillonline.github.io/posts/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.19">ABlog</generator>
@@ -59,6 +59,22 @@ I have it. Anyway, what I have is working even if it is not elegant.&lt;/p&gt;
 ablog to work. Well, without any much customization, I think
 I have it. Anyway, what I have is working even if it is not elegant.</summary>
     <published>2021-08-14T00:00:00-05:00</published>
+  </entry>
+  <entry>
+    <id>https://rillonline.github.io/posts/gps-uncertainties/</id>
+    <title>GPS Uncertainties</title>
+    <updated>2021-08-15T00:00:00-05:00</updated>
+    <content type="html">&lt;p&gt;With the air quality, pollen counts and risk of infection, I have not
+been going anywhere by myself. Basically, I’m not going anywhere, even
+by car. I have to push myself to get out of the house and take a walk.
+This is sad for Nick.&lt;/p&gt;
+</content>
+    <link href="https://rillonline.github.io/posts/gps-uncertainties/" rel="alternate"/>
+    <summary>With the air quality, pollen counts and risk of infection, I have not
+been going anywhere by myself. Basically, I’m not going anywhere, even
+by car. I have to push myself to get out of the house and take a walk.
+This is sad for Nick.</summary>
+    <published>2021-08-15T00:00:00-05:00</published>
   </entry>
   <entry>
     <id>https://rillonline.github.io/posts/insecurity/</id>
