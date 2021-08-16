@@ -377,4 +377,6 @@ myst_enable_extensions = [
     "tasklist",
 ]
 myst_update_mathjax = False
+# get rid of the word documentation in the page title
+html_title = ""
 
