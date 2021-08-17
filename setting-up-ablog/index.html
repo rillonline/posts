@@ -24,7 +24,7 @@
   rel="alternate"
   type="application/atom+xml"
   href="../blog/atom.xml"
-  title="Blog Posts"
+  title="Notes to Myself"
 />
  
 <style type="text/css">
@@ -70,7 +70,7 @@ did not lead to joy. In the end, I decided on a very generic
 presentation so that <code class="docutils literal notranslate"><span class="pre">ablog</span></code> works.</p>
 <p>I decided on the generic approach for two reasons:</p>
 <ol class="simple">
-<li><p>got it working. I didn’t want anything to break which led me
+<li><p>I got it working. I didn’t want anything to break which led me
 initially to despair and to work late.</p></li>
 <li><p>My blog posts are more or less temporary. They may stay in the
 blog repository, but I will be moving most of them to another
@@ -101,8 +101,8 @@ mileage may vary.</p>
 basically I had a blank repository. Then I was able to set up the
 initial framework for <a class="reference external" href="https://ablog.readthedocs.io">ablog</a>. This is important because
 <a class="reference external" href="https://ablog.readthedocs.io">ablog</a> cannot be installed in a directory with an existing
-conf.<code class="docutils literal notranslate"><span class="pre">py</span></code> file.</p>
-<p>ablog start</p>
+conf.<code class="docutils literal notranslate"><span class="pre">py</span></code> file.
+ablog start</p>
 <p>You will be prompted for several bits of information including where
 to install <a class="reference external" href="https://ablog.readthedocs.io">ablog</a>. The directory must exist. The other pieces
 of information will be written into your conf.<code class="docutils literal notranslate"><span class="pre">py</span></code> file.</p>
@@ -186,7 +186,9 @@ elsewhere.</p></li>
 <div class="section" id="building-the-blog">
 <h2>Building the Blog<a class="headerlink" href="#building-the-blog" title="Permalink to this headline">¶</a></h2>
 <p>To build the blog you simply type:</p>
-<p>ablog build</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ablog build
+</pre></div>
+</div>
 <p>You will get a warning about <code class="docutils literal notranslate"><span class="pre">mathjax</span></code>. Review other warnings as
 needed. Your new web site is in the <code class="docutils literal notranslate"><span class="pre">_website</span></code> directory.</p>
 </div>
@@ -194,11 +196,12 @@ needed. Your new web site is in the <code class="docutils literal notranslate"><
 <h2>Cleaning<a class="headerlink" href="#cleaning" title="Permalink to this headline">¶</a></h2>
 <p>I find it useful to delete the <code class="docutils literal notranslate"><span class="pre">_website</span></code> directory before a build.
 <a class="reference external" href="https://ablog.readthedocs.io">ablog</a> has a command for this:</p>
-<p>ablog clea</p>
-<p>n</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ablog clean
+</pre></div>
 </div>
-<div class="section" id="getting-odnnline">
-<h2>Getting ODnNline<a class="headerlink" href="#getting-odnnline" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getting-online">
+<h2>Getting Online<a class="headerlink" href="#getting-online" title="Permalink to this headline">¶</a></h2>
 <p>I use <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> to get my pages published. It’s another <code class="docutils literal notranslate"><span class="pre">python</span></code>
 program I learned about from <a class="reference external" href="https://jupyterbook.org/intro.html">jb</a>. <a class="reference external" href="https://ablog.readthedocs.io">ablog</a> has its own
 <code class="docutils literal notranslate"><span class="pre">deploy</span></code> function but I haven’t checked that out yet. <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>
@@ -229,6 +232,10 @@ add some more interesting elements to it.</p>
   </span>
   <span>&nbsp;</span>
   <span style="float: right">
+     Next: 
+    <a href="../entry-points/">
+      Entry Points 
+    </a>
     
   </span>
 </div>
@@ -276,10 +283,6 @@ add some more interesting elements to it.</p>
   
 </ul>
 <h3>Navigation</h3>
-<ul>
-<li class="toctree-l1"><a class="reference external" href="`Visit my Writing page&lt;https://rillonline.github.io/writing/&gt;`_">`Visit my Writing page&lt;https://rillonline.github.io/writing/&gt;`_</a></li>
-<li class="toctree-l1"><a class="reference external" href="`Go To My Landing Page&lt;https://rillonline.github.io&gt;`_">`Go To My Landing Page&lt;https://rillonline.github.io&gt;`_</a></li>
-</ul>
 
 
 <h3>
@@ -288,32 +291,32 @@ add some more interesting elements to it.</p>
 <ul>
    
   <li>
+    <a href="../using-eww-on-emacs/"
+      >16 August - Using EWW on Emacs</a
+    >
+  </li>
+  
+  <li>
+    <a href="../our-walk-got-crazy/"
+      >16 August - Our Walk was Crazy Today</a
+    >
+  </li>
+  
+  <li>
+    <a href="../entry-points/"
+      >16 August - Entry Points</a
+    >
+  </li>
+  
+  <li>
     <a href="../insecurity/"
       >15 August - Insecurity</a
     >
   </li>
   
   <li>
-    <a href="../I-think-I-have-it/"
-      >14 August - I Think I have it!</a
-    >
-  </li>
-  
-  <li>
-    <a href="../great-day/"
-      >10 August - Great Day</a
-    >
-  </li>
-  
-  <li>
-    <a href="../my-blog/"
-      >02 August - My Blog</a
-    >
-  </li>
-  
-  <li>
-    <a href="../my-writing-is-in-disarray/"
-      >01 August - My Writing is in Disarray</a
+    <a href="../gps-uncertainties/"
+      >15 August - GPS Uncertainties</a
     >
   </li>
   
@@ -325,15 +328,15 @@ add some more interesting elements to it.</p>
 <ul>
    
   <li>
-    <a href="../blog/category/nick/">Nick (1)</a>
+    <a href="../blog/category/nick/">Nick (3)</a>
   </li>
     
   <li>
-    <a href="../blog/category/personal-pieces/">Personal Pieces (1)</a>
+    <a href="../blog/category/personal-pieces/">Personal Pieces (2)</a>
   </li>
     
   <li>
-    <a href="../blog/category/tech/">Tech (1)</a>
+    <a href="../blog/category/tech/">Tech (2)</a>
   </li>
     
   <li>
@@ -348,7 +351,7 @@ add some more interesting elements to it.</p>
 <ul>
    
   <li>
-    <a href="../blog/2021/">2021 (6)</a>
+    <a href="../blog/2021/">2021 (10)</a>
   </li>
    
 </ul>

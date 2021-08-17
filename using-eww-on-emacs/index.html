@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using EWW on Emacs</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" /> 
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+ 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../blog/atom.xml"
+  title="Notes to Myself"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+             <div class="section" id="using-eww-on-emacs">
+<h1>Using EWW on Emacs<a class="headerlink" href="#using-eww-on-emacs" title="Permalink to this headline">¶</a></h1>
+<p>Since <code class="docutils literal notranslate"><span class="pre">eww</span></code> stands for <a class="reference external" href="https://www.gnu.org/software/emacs/manual/html_mono/eww.html">Emacs Web Wowser</a> (No, I’m not kidding!)
+putting Emacs in the title of this piece is redundant. I figured <code class="docutils literal notranslate"><span class="pre">EWW</span></code>
+might just not be a term whose definition would easily come to mind. I
+couldn’t resist <code class="docutils literal notranslate"><span class="pre">wowser</span></code> in any case.</p>
+<p>Browsing via <code class="docutils literal notranslate"><span class="pre">eww</span></code> is not particularly useful when I am searching for
+a page online. I have <code class="docutils literal notranslate"><span class="pre">Linux</span></code> running in a container on my Chromebook.
+The TLDR of this is that I have one terminal to work with. I can use
+<code class="docutils literal notranslate"><span class="pre">Chrome</span></code> to search the web on the Chromebook side.</p>
+<p>Complicating things for me is that the Chromebook screen reader only
+works at a terminal prompt but not in, for example, editors. That’s
+why I am using <code class="docutils literal notranslate"><span class="pre">Emacs</span></code>. I am using <code class="docutils literal notranslate"><span class="pre">speechd.el</span></code> for speech in the app.</p>
+<div class="section" id="using-eww-to-read-web-pages-focused-on-documentation">
+<h2>Using EWW to Read Web Pages Focused on Documentation<a class="headerlink" href="#using-eww-to-read-web-pages-focused-on-documentation" title="Permalink to this headline">¶</a></h2>
+<p>I have wanted to refer to specific information  contained on a number
+of web pages, especially code. Copying this can be tricky. Reviewing
+the steps to accomplish tasks is even trickier.</p>
+<p>EWW helps here.</p>
+<ol>
+<li><p>Activate EWW.</p>
+<p>M-X eww RET</p>
+</li>
+<li><p>At the prompt you can either type keywords for a search or the web
+site address. I can copy the address in <code class="docutils literal notranslate"><span class="pre">Chrome</span></code> and then yank it
+into the prompt with <code class="docutils literal notranslate"><span class="pre">C-y</span></code>.</p></li>
+<li><p>The page appears in a buffer. There are a number of actions you can
+take here, but what I do is type <code class="docutils literal notranslate"><span class="pre">C-x</span> <span class="pre">C-w</span></code> and then a filename with a <code class="docutils literal notranslate"><span class="pre">.txt</span></code> extension. .</p></li>
+</ol>
+<p>Voila. I have saved the information on the web page. I can now review
+it at my leissure and days or weeks later should I need to go back to
+it. I can copy commands as needed.</p>
+<p>For my own convenience I have created a directory called
+<code class="docutils literal notranslate"><span class="pre">documentation-on-various-topics</span></code> where I save these pages.</p>
+</div>
+<div class="section" id="local-html-browsing">
+<h2>Local html browsing<a class="headerlink" href="#local-html-browsing" title="Permalink to this headline">¶</a></h2>
+<p>-In <a class="reference internal" href="../setting-up-ablog/"><span class="doc std std-doc">Setting Up Ablog</span></a> I did not show
+you how to view your <code class="docutils literal notranslate"><span class="pre">index.html</span></code> files. If your installation is like
+mine or you want something quick, <code class="docutils literal notranslate"><span class="pre">eww</span></code> can help. It’s a different
+command, but the outcome is the same.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>eww-open-file
+</pre></div>
+</div>
+<p>Enter the filename you want to open as a web page. For example:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>	~/posts/_website/index.html
+</pre></div>
+</div>
+<p>Voila. Here’s your web page. It’s not as pretty as your regular
+browser would do, but I can spot big errors and then work to fix them.</p>
+<p>.</p>
+</div>
+</div>
+
+<div class="section">
+     
+<div class="section">
+  <span style="float: left">
+     Previous:
+    
+    <a href="../our-walk-got-crazy/">
+       Our Walk was Crazy Today
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+    
+  </span>
+</div>
+  
+</div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../">Blog Posts</a></h1>
+
+
+
+
+
+
+
+
+  
+<h2>
+   
+  16 August 2021 
+</h2>
+
+<ul>
+    
+<li id="location">
+  <span
+    >Location:</span
+  >
+   
+  <a href="../blog/location/the-blue-planet/">The Blue Planet</a>  
+</li>
+  
+<li id="category">
+  <span
+    >Category:</span
+  >
+   
+  <a href="../blog/category/tech/">Tech</a>  
+</li>
+  
+</ul>
+<h3>Navigation</h3>
+
+
+<h3>
+  <a href="../blog/">Recent Posts</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../our-walk-got-crazy/"
+      >16 August - Our Walk was Crazy Today</a
+    >
+  </li>
+  
+  <li>
+    <a href="../entry-points/"
+      >16 August - Entry Points</a
+    >
+  </li>
+  
+  <li>
+    <a href="../setting-up-ablog/"
+      >15 August - Setting up Ablog</a
+    >
+  </li>
+  
+  <li>
+    <a href="../insecurity/"
+      >15 August - Insecurity</a
+    >
+  </li>
+  
+  <li>
+    <a href="../gps-uncertainties/"
+      >15 August - GPS Uncertainties</a
+    >
+  </li>
+  
+</ul>
+
+<h3>
+  <a href="../blog/category/">Categories</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../blog/category/nick/">Nick (3)</a>
+  </li>
+    
+  <li>
+    <a href="../blog/category/personal-pieces/">Personal Pieces (2)</a>
+  </li>
+    
+  <li>
+    <a href="../blog/category/tech/">Tech (2)</a>
+  </li>
+    
+  <li>
+    <a href="../blog/category/writing/">Writing (3)</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="../blog/archive/">Archives</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../blog/2021/">2021 (10)</a>
+  </li>
+   
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Rill.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/using-eww-on-emacs.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

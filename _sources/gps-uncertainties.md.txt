@@ -3,7 +3,6 @@ blogpost: true
 date: August 15, 2021
 category: Nick
 location: Milwaukee
-excerpts: all
 ---
 
 # GPS Uncertainties #
