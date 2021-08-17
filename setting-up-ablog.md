@@ -15,7 +15,7 @@ presentation so that `ablog` works.
 
 I decided on the generic approach for two reasons:
 
-1.  got it working. I didn't want anything to break which led me
+1.  I got it working. I didn't want anything to break which led me
    initially to despair and to work late.
    2. My blog posts are more or less temporary. They may stay in the
       blog repository, but I will be moving most of them to another
@@ -23,7 +23,7 @@ I decided on the generic approach for two reasons:
       This means they don't have to stay searchable and I don't expect
       my readers to have to search through pages of archives to find
       them. The most likely person to search is me.
-	  
+
 ## Let's Get Started ##
 
 [ablog][ablog] is written in `python` so you will need to have `pip`
@@ -37,8 +37,8 @@ mileage may vary.
 
 My install command is simple:
 
-    sudo pip3 install ablog
-	
+	sudo pip3 install ablog
+
 ## Starting Ablog ##
 
 I created a new repository on [github][github] which I cloned so
@@ -46,10 +46,7 @@ basically I had a blank repository. Then I was able to set up the
 initial framework for [ablog][ablog]. This is important because
 [ablog][ablog] cannot be installed in a directory with an existing
 conf.`py` file. 
-
-    
-
-ablog start
+	ablog start
 
 You will be prompted for several bits of information including where
 to install [ablog][ablog]. The directory must exist. The other pieces
@@ -136,9 +133,7 @@ elsewhere.
 
 To build the blog you simply type:
 
-    
-
-ablog build
+	ablog build
 
 You will get a warning about `mathjax`. Review other warnings as
 needed. Your new web site is in the `_website` directory.
@@ -148,13 +143,9 @@ needed. Your new web site is in the `_website` directory.
 I find it useful to delete the `_website` directory before a build.
 [ablog][ablog] has a command for this:
 
-ablog clea
+	ablog clean
 
-    
-
-n
-
-## Getting ODnNline ##
+## Getting Online ##
 
 I use `ghp-import` to get my pages published. It's another `python`
 program I learned about from [jb][jb]. [ablog][ablog] has its own
