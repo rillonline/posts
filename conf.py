@@ -359,24 +359,12 @@ html_static_path = ["_static"]
 # Output file base name for HTML help builder.
 htmlhelp_basename = "BlogPostsdoc"
 
-             # Use myst-parser for markdown files
-             
 
-
-myst_enable_extensions = [
-    "amsmath",
-    "colon_fence",
-    "deflist",
-    "dollarmath",
-    "html_admonition",
-    "html_image",
-    "linkify",
-    "replacements",
-    "smartquotes",
-    "substitution",
-    "tasklist",
-]
 myst_update_mathjax = False
 # get rid of the word documentation in the page title
 html_title = ""
 
+
+myst_substitutions = {
+    "0 min read": "less than a minute read"
+    }
