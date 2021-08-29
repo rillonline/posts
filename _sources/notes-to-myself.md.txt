@@ -8,3 +8,8 @@
    C. Type the command:
       <pre>python3 -m http.server</pre>
 The website is served at localhost:8000`. ctrl+c kills the server.
+3. With speech, move to the beginning of the line is C-a and move to
+   the end of the line is C-e C-e. To move bysentence is M-a
+   (backwards) and M-e (forwards.
+4. `pandoc` can process multiple files as input to create one file:
+   `pandoc -o single.md *.md`

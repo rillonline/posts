@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://rillonline.github.io/posts</id>
   <title>Notes to Myself</title>
-  <updated>2021-08-17T18:22:41.856048+00:00</updated>
+  <updated>2021-08-29T18:34:34.300556+00:00</updated>
   <link href="https://rillonline.github.io/posts"/>
   <link href="https://rillonline.github.io/posts/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.19">ABlog</generator>
@@ -143,5 +143,29 @@ putting Emacs in the title of this piece is redundant. I figured EWW
 might just not be a term whose definition would easily come to mind. I
 couldn’t resist wowser in any case.</summary>
     <published>2021-08-16T00:00:00-05:00</published>
+  </entry>
+  <entry>
+    <id>https://rillonline.github.io/posts/kearsarge-second-draft/</id>
+    <title>Kearsarge Second Draft</title>
+    <updated>2021-08-21T00:00:00-05:00</updated>
+    <content type="html">&lt;p&gt;1 min read&lt;br /&gt;
+179 words&lt;/p&gt;
+</content>
+    <link href="https://rillonline.github.io/posts/kearsarge-second-draft/" rel="alternate"/>
+    <summary>1 min read&lt;br /&gt;
+179 words</summary>
+    <published>2021-08-21T00:00:00-05:00</published>
+  </entry>
+  <entry>
+    <id>https://rillonline.github.io/posts/displaying-date-and-time-in-emacs/</id>
+    <title>Displaying Date and Time in Emacs</title>
+    <updated>2021-08-29T00:00:00-05:00</updated>
+    <content type="html">&lt;p&gt;1 min read&lt;br /&gt;
+189 words&lt;/p&gt;
+</content>
+    <link href="https://rillonline.github.io/posts/displaying-date-and-time-in-emacs/" rel="alternate"/>
+    <summary>1 min read&lt;br /&gt;
+189 words</summary>
+    <published>2021-08-29T00:00:00-05:00</published>
   </entry>
 </feed>
