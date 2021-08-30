@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://rillonline.github.io/posts</id>
   <title>Notes to Myself</title>
-  <updated>2021-08-29T18:34:34.300556+00:00</updated>
+  <updated>2021-08-30T02:57:47.090776+00:00</updated>
   <link href="https://rillonline.github.io/posts"/>
   <link href="https://rillonline.github.io/posts/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.19">ABlog</generator>
@@ -155,6 +155,18 @@ couldn’t resist wowser in any case.</summary>
     <summary>1 min read&lt;br /&gt;
 179 words</summary>
     <published>2021-08-21T00:00:00-05:00</published>
+  </entry>
+  <entry>
+    <id>https://rillonline.github.io/posts/a-new-adventure-idea/</id>
+    <title>A New Adventure Idea</title>
+    <updated>2021-08-29T00:00:00-05:00</updated>
+    <content type="html">&lt;p&gt;6 min read&lt;br /&gt;
+1216 words&lt;/p&gt;
+</content>
+    <link href="https://rillonline.github.io/posts/a-new-adventure-idea/" rel="alternate"/>
+    <summary>6 min read&lt;br /&gt;
+1216 words</summary>
+    <published>2021-08-29T00:00:00-05:00</published>
   </entry>
   <entry>
     <id>https://rillonline.github.io/posts/displaying-date-and-time-in-emacs/</id>
